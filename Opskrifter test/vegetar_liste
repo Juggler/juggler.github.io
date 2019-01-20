@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Vegetar</title>
+</head>
+
+<body>
+  <div>
+      <h1>Vegetar</h1>
+  </div>
+
+    <a href="index.html">Tilbage til forsiden</a>
+  <div>
+  </div>
+
+</body>
