@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+h1 {
+  color: black;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  opacity: 0.5;
+  text-align: center;
+  z-index: 10;
+}
+
+.forside-billeder {
+  width: 34%;
+  height: 34%;
+  overflow: hidden;
+  display: inline;
+  transition: filter .4s ease-in-out;
+  -webkit-filter: brightness(20%);
+  filter: brightness(20%);
+  margin: 0px;
+  padding: 0px;
+}
+
+.forside-billeder:hover {
+  -webkit-filter: brightness(100%);
+  filter: brightness(100%);
+}
+
+#forside-kage {
+  float: left;
+  margin-right: -1.2%;
+}
+
+#forside-meat {
+  float: center;
+}
+
+#forside-vegetar {
+  float: right;
+  margin-left: -1.2%;
+}
+
+.img_forside_lag {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(36, 62, 206, 0.6);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.forside-billeder:hover .img_forside_lag {
+  visibility: visible;
+  opacity: 1;
+}
+
+.img_description {
+  transition: .2s;
+  transform: translateY(1em);
+}
+
+.img_forside_lag:hover .img__description {
+  transform: translateY(0);
+}
